@@ -10,23 +10,28 @@ const categoryList = ["apple", "tech_crunch", "wall_street", "tesla"];
 const MainComponent = () => {
   const [postList, setPostList] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [loader, setLoader] = useState(true);
 
   const fetchPosts = async (type) => {
     const res = await axios.get(
       `${APISource.api_endpoint}${category[type]}&apiKey=${APISource.api_key}`
     );
-    setPostList(res.data.articles);
+    if(res.data.articles){
+      setLoader(false)
+      setPostList(res.data.articles);
+    }else{
+      return ["NO Data"]
+    }
   };
 
   useEffect(() => {
     fetchPosts(categoryList[activeIndex]);
   }, []);
 
-  useEffect(() => {
-    console.log(postList);
-  }, [postList]);
+
 
   const fetchCaetgoryPosts = (data, activeIndex) => {
+    setLoader(true);
     fetchPosts(data);
     setActiveIndex(activeIndex);
   };
@@ -37,7 +42,7 @@ const MainComponent = () => {
         fetchCaetgoryPosts={fetchCaetgoryPosts}
         activeIndex={activeIndex}
       />
-      <CardComponent postList={postList} />
+      <CardComponent postList={postList} dataLoader={loader}/>
     </div>
   );
 };
