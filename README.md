@@ -1,17 +1,16 @@
-# Getting Started with New Cards
+# Getting Started with New Cards Website
 
 This project gives a brief description of news around the world in a card format.
 
 ## Initial Setup
 
-### git clone https://github.com/supreeth-spiger/NewsCards.git
+### `git clone https://github.com/supreeth-spiger/NewsCards.git`
 
-Clone the Application [https://github.com/supreeth-spiger/NewsCards.git](https://github.com/supreeth-spiger/NewsCards.git) in the command line.  
+Clone the repository [https://github.com/supreeth-spiger/NewsCards.git](https://github.com/supreeth-spiger/NewsCards.git) from CLI.
 
-### yarn
+### `yarn`
 
 Install depandency Packages.\
-
 If Yarn is not installed in your device , Please visit [https://yarnpkg.com/](https://yarnpkg.com/) this website to install yarn.
 
 ## Available Scripts
