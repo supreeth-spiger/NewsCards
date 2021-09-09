@@ -6,12 +6,12 @@ This project gives a brief description of news around the world in a card format
 
 ### `git clone https://github.com/supreeth-spiger/NewsCards.git`
 
-Clone the repository [https://github.com/supreeth-spiger/NewsCards.git](https://github.com/supreeth-spiger/NewsCards.git) from CLI.
+Clone the repository from CLI.
 
 ### `yarn`
 
 Install depandency Packages.\
-If Yarn is not installed in your device , Please visit [https://yarnpkg.com/](https://yarnpkg.com/) this website to install yarn.
+If `yarn` is not installed in your device , Please visit [https://yarnpkg.com/](https://yarnpkg.com/) to install yarn.
 
 ## Available Scripts
 
@@ -32,5 +32,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
